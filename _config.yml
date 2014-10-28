@@ -1,10 +1,11 @@
 # Site settings
-title: Notes/Journal
+title: Richard Perry
+author: Richard Perry
 email: notes@perry-online.me.uk
 description: > # this means to ignore newlines until "baseurl:"
   This is my own personal site for keeping notes and maybe even a journal of my
   Chinese Language learning. It is not for general consumption, but I like Jekyll
-  & GitHub so I am using the combination for my own benefit :smile:
+  & GitHub so I am using the combination for my own benefit
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://zh.perry-online.me.uk" # the base hostname & protocol for your site
 twitter_username: richard_p2_ZH
