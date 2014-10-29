@@ -6,8 +6,11 @@ title: English
 {% for post in site.categories.en %}
             <article itemscope itemtype='http://schema.org/BlogPosting' class='post'>
                 <header class="post-header">     
-                    <h3 class="post-title"><a href='{{ post.url }}' itemprop='url'>{{ post.title }}</a></h3>
-                    <i class='fa fa-clock-o'></i><time itemprop='datePublished' content='{{ post.date | date: '%F' }}' datetime='{{ post.date }}'> {{ post.date | date: "%d %b %Y" }}</time>
+                    <h2 class="post-title">{{ post.title }}</h2>
+	                <div class='post-meta'>
+	                    <time itemprop='datePublished' content='{{ page.date | date: '%F' }}' datetime='{{ page.date }}'> {{ page.date | date: "%d %b %Y" }}</time>  |  
+	                    <span itemprop='keywords'>{{ tags }}</span>
+	                </div>
                 </header>
                 <section class='post' itemProp='articleBody'>
                     {{ post.content }}

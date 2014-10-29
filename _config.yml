@@ -14,6 +14,11 @@ github_username:  richardp2
 # Build settings
 markdown: kramdown
 permalink: pretty
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
 
 # Define defaults
 defaults:
@@ -60,17 +65,3 @@ prose:
           element: "text"
           label: "Date (YYYY-MM-DD HH:MM:SS)"
           value: "2014-06-08 10:30:00"
-    _pages:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title"
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
