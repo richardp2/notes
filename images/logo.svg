@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <svg xmlns:svg="http://www.w3.org/2000/svg" 
-xmlns="http://www.w3.org/2000/svg" width="150px" height="75px">
-    <g style="font-family: 'KaiTi', '楷体', STKaiti, '华文楷体', serif">
-        <text x="0" y="70px" transform="scale(1, 1)" font-size="80px">汉语</text>
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns="http://www.w3.org/2000/svg" 
+	width="200px" height="180px">
+	<defs>
+	    <link xmlns="http://www.w3.org/1999/xhtml" href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css' />
+	    <style>
+	      text {
+	      	font: small-caps bold 32px 'Indie Flower', cursive; 
+	      	text-anchor: middle; 
+	      	text-rendering: geometricPrecision; 
+	      }
+	    </style>
+	  </defs>
+
+	<g id="ProfilePic">
+		<circle r="77" cx="100" cy="77" stroke="white" fill='none'/>
+		<clipPath id="clipCircle">
+			<circle r="75" cx="100" cy="77"/>
+		</clipPath>
+		<a xlink:href="http://zh.perry-online.me.uk/" target="_parent" xlink:title="Richard Perry | Home">
+			<image x="25" y="2" width="150" height="150" xlink:href="richard.jpg" clip-path="url(#clipCircle)" />
+		</a>
+	</g>
+    <g id="title">
+    	<a xlink:href="http://zh.perry-online.me.uk/" target="_parent" xlink:title="Richard Perry | Home">
+	        <text x="100" y="178">
+	        	<tspan x="100" y="178" fill="white">Richard Perry</tspan>
+	        </text>
+    	</a>
     </g>
 </svg>
