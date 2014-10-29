@@ -20,12 +20,12 @@
 			<circle r="75" cx="100" cy="77"/>
 		</clipPath>
 		<a xlink:href="http://zh.perry-online.me.uk/" target="_parent" xlink:title="Richard Perry | Home">
-			<image x="25" y="2" width="150" height="150" xlink:href="richard.jpg" clip-path="url(#clipCircle)" />
+			<image x="25" y="2" width="150" height="150" xlink:href="/images/richard.jpg" clip-path="url(#clipCircle)" />
 		</a>
 	</g>
     <g id="title">
     	<a xlink:href="http://zh.perry-online.me.uk/" target="_parent" xlink:title="Richard Perry | Home">
-	        <text x="100" y="178">
+	        <text x="100" y="178" font-family="'Indie Flower', cursive">
 	        	<tspan x="100" y="178" fill="white">Richard Perry</tspan>
 	        </text>
     	</a>
