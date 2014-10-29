@@ -132,6 +132,48 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
 }
 
+/* ==========================================================================
+   Archive Page Styles
+   ========================================================================== */
+
+#archive {
+    list-style: none;
+}
+
+    #archive .year, 
+    #archive .month,
+    #archive .day {
+        color: #606060;
+        display: block;
+        font-weight: normal;
+        margin: 0;
+        padding: 18px 0 0;
+        text-align: center;
+        width: 88px;
+    }
+
+    #archive .year {
+        font-size: 22px;
+        padding: 35px 0 0;
+    }
+    
+    #archive .day {
+        display: inline-block;
+        padding: 0;
+    }
+
+    #archive .category {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      display: inline-block;
+      font-size:88%;
+      font-weight:bold;
+      text-align:center;
+      width:55px;
+    }
+    #archive .category.en {background-color:#d1e4cd;}
+    #archive .category.zh {background-color:#e4cdcd;}
 
 @media (min-width: 48em) {
     .site-content,
