@@ -27,7 +27,7 @@
     <div id='container' class='pure-g'>
         
         <header class='site-header pure-u-1 pure-u-md-1-4'>
-            <a href='{{ site.baseurl | prepend: site.url }}/'><img src='{{site.baseurl}}/images/logo.svg' title='{{ site.title }}' alt='{{ site.title }}'></a>
+            <object type='image/svg+xml' data='{{ site.baseurl | prepend: site.url }}/images/logo.svg' title='{{ site.title }}' name='logo'>Your browser does not support SVG</object>
             <h1 class='site-title'><a href='{{ site.baseurl | prepend: site.url }}/'>{{ site.title }}</a></h1>
             <nav class='site-navigation pure-menu pure-menu-open'>
                 <ul> {% for node in site.pages %} {% if node.title %}  
