@@ -5,12 +5,13 @@
 	width="200px" height="180px">
 	<defs>
 	    <link xmlns="http://www.w3.org/1999/xhtml" href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css' />
-	    <style>
-	      text {
-	      	font: small-caps bold 32px 'Indie Flower', cursive; 
-	      	text-anchor: middle; 
-	      	text-rendering: geometricPrecision; 
-	      }
+	    <style type="text/css">
+	    	@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+	        text {
+		      	font: small-caps bold 32px 'Indie Flower', cursive; 
+		      	text-anchor: middle; 
+		      	text-rendering: geometricPrecision; 
+	        }
 	    </style>
 	  </defs>
 
@@ -20,7 +21,7 @@
 			<circle r="75" cx="100" cy="77"/>
 		</clipPath>
 		<a xlink:href="http://zh.perry-online.me.uk/" target="_parent" xlink:title="Richard Perry | Home">
-			<image x="25" y="2" width="150" height="150" xlink:href="/images/richard.jpg" clip-path="url(#clipCircle)" />
+			<image x="25" y="2" width="150" height="150" xlink:href="http://zh.perry-online.me.uk/images/richard.jpg" clip-path="url(#clipCircle)" />
 		</a>
 	</g>
     <g id="title">
