@@ -2,23 +2,29 @@
 title: Richard Perry
 author: Richard Perry
 email: notes@perry-online.me.uk
-description: > # this means to ignore newlines until "baseurl:"
+description: > 
   This is my own personal site for keeping notes and maybe even a journal of my
   Chinese Language learning. It is not for general consumption, but I like Jekyll
   & GitHub so I am using the combination for my own benefit
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://zh.perry-online.me.uk" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://zh.perry-online.me.uk"
 twitter_username: richard_p2_ZH
 github_username:  richardp2
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:categories/:title/
 gems:
 - jekyll-mentions
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
+
+languages: &languages
+  - name: 'English'
+    value: 'en'
+  - name: '中文'
+    value: 'zh'
 
 # Define defaults
 defaults:
@@ -30,14 +36,25 @@ defaults:
       layout: "post"
   -
     scope:
-      path: ""
+      path: pages
       type: "pages"
     values:
       layout: "page"
+  -
+    scope:
+      path: en/_posts
+    values:
+      lang: en-gb
+  -
+    scope:
+      path: zh/_posts
+    values:
+      lang: zh-cn
       
 prose:
-  rooturl: '_posts'
+  rooturl: ''
   siteurl: 'http://zh.perry-online.me.uk/'
+  relativeLinks: 'http://zh.perry-online.me.uk/links.jsonp'
   media: 'images'
   ignore:
     - index.md
@@ -45,23 +62,23 @@ prose:
     - /_layouts
     - /_includes
   metadata:
-    _posts:
-      - name: "layout"
+    en/_posts:
+      - name: "date"
         field:
-          element: "hidden"
-          value: "post"
+          element: "text"
+          label: "Date (YYYY-MM-DD HH:MM:SS)"
+          value: "2014-11-01 22:30:00+00:00"
       - name: "title"
         field:
           element: "text"
           label: "Title"
+      - name: "author"
+        field:
+          element: "hidden"
+          value: "richard"
       - name: "tags"
         field:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
           alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date (YYYY-MM-DD HH:MM:SS)"
-          value: "2014-06-08 10:30:00"
