@@ -15,7 +15,7 @@ body {
 }
 
 :lang(zh-cn) {
-    font-family: "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+    font-family: "Open Sans", "KaiTi", "楷体", STKaiti, "华文楷体", serif;
 }
 
 a {
@@ -28,7 +28,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Indie Flower', cursive;
+    font-family: "Indie Flower", cursive, "KaiTi", "楷体", STKaiti, "华文楷体", serif;
     text-transform: uppercase;
 }
 
