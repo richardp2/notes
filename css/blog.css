@@ -8,15 +8,14 @@ html, body {
     height: 100%;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+body, .pure-g [class *="pure-u"] {
+    font-family: 'Source Sans Pro', 'KaiTi', '楷体', STKaiti, '华文楷体', sans-serif;
+    font-size: 18px;
     line-height: 1.8em !important;
 }
 
-:lang(zh-cn) {
-    font-family: 'Open Sans', "KaiTi", "楷体", STKaiti, "华文楷体", serif;
-    font-size: 1.4rem;
+.large {
+  font-size: 1.5rem;
 }
 
 a {
@@ -29,9 +28,12 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Indie Flower', cursive, "KaiTi", "楷体", STKaiti, "华文楷体", serif;
+    font-family: 'Indie Flower', "KaiTi", "楷体", STKaiti, "华文楷体", serif;
     text-transform: uppercase;
 }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
 
 /* LAYOUT CSS */
 .pure-img-responsive {
