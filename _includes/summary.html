@@ -1,0 +1,17 @@
+{% if post.lang %}{% assign lang = post.lang %}{% else %}{% assign lang = 'en-gb' %}{% endif %}{% capture tags %}{% for atag in post.tags %}<a href='/tags/#{{ atag | cgi_escape }}' class='pure-button pure-button-xsmall'><i class="fa fa-tag"></i> {{ atag }}</a>{% unless forloop.last %}{% endunless %}{% endfor %}{% endcapture %}
+            <article itemscope itemtype='http://schema.org/BlogPosting' class='post'>
+                <header class='post-header'>     
+                    <h3 class='post-title'><a href='{{ post.url }}' itemprop='url'>{{ post.title }}</a></h3>
+                    <div class='post-meta'>
+                        <time itemprop='datePublished' content='{{ post.date | date: '%F' }}' datetime='{{ post.date }}'> {{ post.date | date: "%d %b %Y" }}</time>
+                    </div>
+                </header>
+                <section class='post' itemProp='articleBody' lang='{{ lang }}'>
+                    {{ post.excerpt }}
+                </section>
+                <footer class='post-footer'>
+                    <div class='post-meta'>
+                        <span class='post-tags' itemprop='keywords'>Tagged: {{ tags }}</span>
+                    </div>
+                </footer>
+            </article>
