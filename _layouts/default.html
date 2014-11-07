@@ -30,10 +30,12 @@
             <object type='image/svg+xml' data='{{ site.baseurl | prepend: site.url }}/images/logo.svg' title='{{ site.title }}' name='logo'>Your browser does not support SVG</object>
             <h1 class='site-title'><a href='{{ site.baseurl | prepend: site.url }}/'>{{ site.title }}</a></h1>
             <nav class='site-navigation pure-menu pure-menu-open'>
-                <ul> {% for node in site.pages %} {% if node.title %}  
-                    <li>
-                        <a {% if page.url == node.url %}class='pure-menu-selected'{% endif %} href='{{ node.url | prepend: site.baseurl }}'>{{ node.title }}</a>
-                    </li> {% endif %} {% endfor %}  
+                <ul> 
+                    <li><a {% if page.url == "/index.html" %}class='pure-menu-selected'{% endif %} href='/'>Home</a></li> 
+                    <li><a {% if page.url == "/en/index.html" %}class='pure-menu-selected'{% endif %} href='/en/'>English</a></li> 
+                    <li><a {% if page.url == "/zh/index.html" %}class='pure-menu-selected'{% endif %} href='/zh/'>中文 (Chinese)</a></li> 
+                    <li><a {% if page.url == "/tags/" %}class='pure-menu-selected'{% endif %} href='/tags/'>Tags</a></li>  
+                    <li><a {% if page.url == "/archives/" %}class='pure-menu-selected'{% endif %} href='/archives/'>Archives</a></li> 
                 </ul>
             </nav>
             <p class="site-description">{{ site.description }}</p>

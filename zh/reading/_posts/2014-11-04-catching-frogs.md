@@ -75,7 +75,7 @@ In the last few days, I did a not-so-illustrious thing, and I’m ashamed to say
 | 好像 | hǎo xiàng | (v) as if; seem like
 | 对 | duì | couple/pair/to be opposite/to oppose/to face/for/to/correct (answer)/to answer/to reply/to direct (towards sth)/right
 | 说 | shuō | to speak/to say
-| 我们 wǒ men | we/us/ourselves
+| 我们 | wǒ men | we/us/ourselves
 | 放 | fàng | to release/to free/to let go/to put/to place/to let out
 | 回 | huí | (a measure word for matters or actions) a time/to circle/to go back/to turn around/to answer/to return/to revolve/Islam
 | 大自然 | dà zì rán | nature (as in Mother Nature)
@@ -88,10 +88,8 @@ In the last few days, I did a not-so-illustrious thing, and I’m ashamed to say
 | 感到 | gǎn dào | to feel/to sense/to have the feeling that/think that/to move/to affect
 | 不好意思 | bù hǎo yì si | feel embarrassed/be ill at ease/find it embarrassing (to do sth)
 | 悄悄 | qiǎo qiǎo | quietly
-{: .pure-table .pure-table-striped lang='en-gb'}
+{: .pure-table .pure-table-striped lang='en-gb'}  
 
-Source: [Chinese Reading Practice][crp]
-
-
+Source - [Chinese Reading Practice][crp]
 
 [crp]: //chinesereadingpractice.com/2014/05/07/catching-frogs/ "Catching Frogs | Chinese Reading Practice"
