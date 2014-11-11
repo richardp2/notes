@@ -9,5 +9,5 @@ permalink: /archives/
       <h3 class='year'>{{ post.date | date: '%Y' }}</h3>{% endif %}{% endunless %}{% unless post.next %}
       <h4 class='month'>{{ post.date | date: '%B' }}</h4>{% else %}{% capture month %}{{ post.date | date: '%B' }}{% endcapture %}{% capture nmonth %}{{ post.next.date | date: '%B' }}{% endcapture %}{% if month != nmonth %}
       <h4 class='month'>{{ post.date | date: '%B' }}</h4>{% endif %}{% endunless %}
-      <li><span class='day'>{{ post.date | date:"%d" }}</span> {{ cats }} <a href="{{ post.url }}">{{ post.title }}</a></li> {% assign cats = false %}{% endfor %}
+      <li>{% unless post.next %}<span class='day'>{{ post.date | date:"%d" }}</span>{% else %}{% capture day %}{{ post.date | date: '%d' }}{% endcapture %}{% capture nday %}{{ post.next.date | date: '%d' }}{% endcapture %}{% if day != nday %}<span class='day'>{{ post.date | date:"%d" }}</span>{% else %}<span class='day'>  </span>{% endif %}{% endunless %} {{ cats }} <a href="{{ post.url }}">{{ post.title }}</a></li> {% assign cats = false %}{% endfor %}
     </ul>
