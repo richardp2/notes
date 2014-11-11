@@ -156,6 +156,32 @@ h4 { font-size: 1.25rem; }
 }
 
 /* ==========================================================================
+   Tag Archive Page Styles
+   ========================================================================== */
+
+#tag-list {
+  list-style: none;
+}
+
+#tag-list li {
+  float: left;
+  width: 49%;
+}
+
+#tag-list li a
+{
+  display: block;
+  text-decoration: none;
+}
+ 
+#tag-list::after {
+  clear: left;
+  display: block;
+}
+
+
+
+/* ==========================================================================
    Archive Page Styles
    ========================================================================== */
 
@@ -195,8 +221,13 @@ h4 { font-size: 1.25rem; }
       text-align:center;
       width:55px;
     }
+    #archive .category,
     #archive .category.en {background-color:#d1e4cd;}
-    #archive .category.zh {background-color:#e4cdcd;}
+    #archive .category.zh,
+    #archive .category.hsk,
+    #archive .category.reading {background-color:#f9d0d0;}
+
+
 
 @media (min-width: 48em) {
     .site-content,
@@ -222,7 +253,10 @@ h4 { font-size: 1.25rem; }
     
     .site-navigation ul li {
         display: block;
+    }    
+
+    #tag-list li {
+      width: 24%;
     }
-    
     
 }

@@ -3,9 +3,10 @@ title: Richard Perry
 author: Richard Perry
 email: notes@perry-online.me.uk
 description: > 
-  This is my own personal site for keeping notes and maybe even a journal of my
-  Chinese Language learning. It is not for general consumption, but I like Jekyll
-  & GitHub so I am using the combination for my own benefit
+  This is my own personal site for keeping a basic journal and some notes for my Chinese Language
+  Learning. Hopefully, once my Chinese improved, I will also start writing some journal entries in
+  Mandarin. The site is not for general consumption, but I like Jekyll   & GitHub so I am using the
+  combination for my own benefit.
 baseurl: ""
 url: "http://zh.perry-online.me.uk"
 twitter_username: richard_p2_ZH
