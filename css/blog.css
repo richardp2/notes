@@ -229,6 +229,13 @@ h4 { font-size: 1.25rem; }
     #archive .category.hsk,
     #archive .category.reading {background-color:#f9d0d0;}
 
+@media (min-width: 32em) {  
+
+    #tag-list li {
+      width: 32%;
+    }
+    
+}
 
 
 @media (min-width: 48em) {
@@ -255,11 +262,7 @@ h4 { font-size: 1.25rem; }
     
     .site-navigation ul li {
         display: block;
-    }    
-
-    #tag-list li {
-      width: 32%;
-    }
+    } 
     
 }
 
