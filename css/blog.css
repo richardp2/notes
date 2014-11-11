@@ -176,6 +176,7 @@ h4 { font-size: 1.25rem; }
  
 #tag-list::after {
   clear: left;
+  content: "   ";
   display: block;
 }
 
