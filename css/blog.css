@@ -266,12 +266,18 @@ h4 { font-size: 1.25rem; }
     
 }
 
-
-
 @media (min-width: 56em) {  
 
     #tag-list li {
       width: 24%;
+    }
+    
+}
+
+@media (min-width: 68em) {  
+
+    #tag-list li {
+      width: 19%;
     }
     
 }
