@@ -159,7 +159,8 @@ h4 { font-size: 1.25rem; }
    Tag Archive Page Styles
    ========================================================================== */
 
-#tag-list {
+#tag-list,
+.post-list {
   list-style: none;
   padding-left: 0;
 }
