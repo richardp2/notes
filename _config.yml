@@ -37,6 +37,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      author: richard
   -
     scope:
       path: pages
